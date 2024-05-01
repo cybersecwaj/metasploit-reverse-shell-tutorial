@@ -1,27 +1,27 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1> Metasploit - Reverse Shell Tutorial</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+ ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo) CHANGE THIS 
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+🔒 Explore a project which practically demonstrates exploiting a Windows 11 vulnerability using Metasploit to gain webcam access and establish a reverse shell payload. This repository showcases the exploit code and demonstrates its execution step-by-step. Dive into the world of cybersecurity with this educational project. 
+<br />
+<br />
+<h2>Languages and Utilities Used</h2>
+ - <b>Metasploit</b>
+<h2>Environments Used </h2>
+- <b>Kali Linux</b> 
+<br />
+- <b>Windows 11</b> 
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
-
-<h2>Environments Used </h2>
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/bpkukRnADlQ/0.jpg)](https://www.youtube.com/watch?v=bpkukRnADlQ)
-
-- <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
 
 Launch the utility: <br/>
+CHANGE THIS 
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -58,7 +58,7 @@ Observe the wiped disk:  <br/>
 @@ text in purple (and bold)@@
 ```
 --!>
-
+<!--
 
 # Metasploit Reverse Shell Tutorial
 
@@ -71,7 +71,6 @@ A reverse shell is a type of shell where the target machine initiates the connec
 ## Prerequisites
 
 Before proceeding with this tutorial, make sure you have the following prerequisites installed:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
 - Metasploit Framework
 - Kali Linux or any other Linux distribution with Metasploit installed
 - Basic knowledge of command-line interface (CLI) and networking concepts
@@ -93,6 +92,8 @@ This tutorial is for educational purposes only. Do not use the techniques descri
 ## Contributing
 
 If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+
+-->
 
 ## Licence
 
